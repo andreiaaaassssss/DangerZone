@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danger zone</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    *, *::after, *::before {
+        -webkit-user-select: none;
+        -webkit-user-drag: none;
+        -webkit-app-region: no-drag;
+       
+    }
+    *{
+        
+     cursor: none;  
+    }
+   
+    span[id="nr1"]{
+     padding: 3%;
+     margin-left: 93%;
+     margin-top: 1%;
+     position: absolute;
+       background-image: url("https://cdn.discordapp.com/attachments/873566355327160390/873708791101808650/musicOff.png");
+    background-size: cover;
+    z-index: 2; margin-top: -1%;
+    transition: 1s;
+
+    }
+    span[id="heal"]
+    {  color: rgba(7, 7, 7, 0.212);
+        text-shadow: 0.5px 0.5px 0.2px  white ,  2px 2px 5px rgba(0, 0, 0, 0.644), 2px 2px rgb(145, 145, 145),  0px 0px 70px rgb(0, 0, 0);
+
+     background-color: rgba(0, 0, 0, 0);
+
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+            font-size: 30px;
+           width: 25%;
+        
+           display: flex;
+           font-family: 'Press Start 2P', cursive;
+           margin: auto;
+           align-items: center;
+           position: fixed;
+            justify-content: center;z-index: 2;
+            transition: 1s;
+
+        
+    }
+    span[id="heal2"]
+    {  color: rgb(0, 0, 0);
+        text-shadow: 0.5px 0.5px 0.2px  white ;
+     background-color: black;
+     border: 2px solid rgb(88, 23, 23);
+     width: 25%;
+     box-shadow: 0px 0px 5px 5px black;
+     height: 4%;
+     background-image: url("https://cdn.discordapp.com/attachments/873566355327160390/874097641682792458/creepy-blood-worms-texture-free.jpg");
+     background-size: cover;
+     background-repeat: none;
+
+     background-image: url("https://cdn.discordapp.com/attachments/873566355327160390/874097641682792458/creepy-blood-worms-texture-free.jpg");
+     background-size: cover;
+     background-repeat: none;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 30px;
+           
+        opacity: 1;
+            display: flex;
+            position: absolute;
+            margin: auto;
+            align-items: center;
+             
+             justify-content: center;     margin-left: 50%;      position: fixed;
+             z-index: 5;
+             margin-top: -1%;
+             font-family: 'Press Start 2P', cursive;
+             transition: 1s;
+
+    }
+    body{
+        background-image: url("https://cdn.discordapp.com/attachments/873566355327160390/873645701475754034/grunge-metal-background.jpg");
+        background-size: cover;
+    margin: 1%;z-index: 2;
+    }
+    span[id="nr"]{
+        color: rgba(7, 7, 7, 0.212);
+        text-shadow: 0.5px 0.5px 0.2px  white ,  2px 2px 5px rgba(0, 0, 0, 0.644), 2px 2px rgb(145, 145, 145),  0px 0px 70px rgb(0, 0, 0);
+     background-color: black;
+     border: 2px solid rgb(22, 41, 20);
+     width: 25%;
+
+     height: 4%;
+     background-image: url("https://cdn.discordapp.com/attachments/873566355327160390/874097641682792458/creepy-blood-worms-texture-free.jpg");
+     background-size: cover;
+     background-repeat: none;
+
+     background-image: url("https://cdn.discordapp.com/attachments/873566355327160390/874112920114593843/aasdasdasdasd.png");
+     background-size: cover;
+     background-repeat: none;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 30px;
+           
+        opacity: 1;
+            display: flex;
+            position: absolute;
+            margin: auto;
+            align-items: center;
+         
+         justify-content: center;z-index: 5; margin-left: 25%;      position: fixed; margin-top: -1%;font-family: 'Press Start 2P', cursive;
+         transition: 1s;
+         box-shadow: 0px 0px 5px 5px black;
+z-index: 5;
+    }
+    
+    button[id="apasa"]{
+     background: rgba(92, 92, 92, 0);
+     position: absolute;
+ 
+     margin-left: auto;
+     background-image: url("https://cdn.discordapp.com/attachments/873566391612084225/873566422960320522/counter_strike_PNG102.png");
+   background-size: cover;
+   padding: 0%;   
+   border:0;
+   animation: misca 3s infinite;
+   z-index: 2;
+   
+  transition: 0.2s;
+
+    }
+    @keyframes misca{
+        0%{zoom: 0%;  transition: 1s;}
+        50%{zoom: 30%; transition: 1s;}
+        100%{zoom: 0%; transition: 1s;}
+    }
+    
+    div[id="canvas"]{
+        border: 30px solid    ;
+       border-image: url("https://cdn.discordapp.com/attachments/873566355327160390/873650237103820810/old-rusty-corroded-car-parts-in-car-scrapyard-car-recyclingwrecking-picture-id868926884.png")  30 round ;
+       box-shadow: 0px 0px 20px 20px black;
+       margin: auto;
+        display: flex;
+         align-items: center;
+         justify-content: center;
+        max-width: 80%;
+        padding-bottom: 45%;
+        background-image: url("https://cdn.discordapp.com/attachments/873566355327160390/873641803138625536/1900791.jpg");
+        background-size: cover;
+        background-position: center;
+z-index: 2;
+color: rgba(7, 7, 7, 0.212);
+text-shadow: 0.5px 0.5px 0.2px  white ,  2px 2px 5px rgba(0, 0, 0, 0.644), 2px 2px rgb(145, 145, 145),  0px 0px 70px rgb(0, 0, 0);
+
+
+font-family: 'Press Start 2P', cursive;
+ font-size: 50px;
+  transition: 0.5s;
+    }
+    button[id="Start"]{
+        
+        position: absolute;
+        margin-left: 40%;
+        margin-top: 25%;
+         margin-top: 37%;
+         z-index: 5;
+     
+      padding-left: 20%;
+      padding-bottom: 10%;
+      border: 0ch;
+      background: rgba(0, 0, 0, 0);    background-image:url("https://cdn.discordapp.com/attachments/873566355327160390/873721438530572378/PngItem_3206837.png");
+      background-size: cover;
+      transition: 1s;
+      
+    }
+    button[id="Start"]:hover
+    {
+        background-image: url("https://cdn.discordapp.com/attachments/873566355327160390/873725209587380284/dsssa.png");
+        transition: 1s;
+    }
+    @media only screen and (max-width: 1500px){
+        div[id="canvas"]{
+            padding-bottom: 60%;
+        } 
+    }
+    #cursor{
+        height: 50px;
+        width: 50px;
+        top:0;
+        left:0;
+        background-image: url("https://cdn.discordapp.com/attachments/873566391612084225/874069967455281192/asdasdas.png");
+      background-size: cover;
+        position: fixed;
+      z-index: 10;
+      pointer-events: none;
+    }
+</style>
+<link rel="icon" href="https://cdn.discordapp.com/attachments/873566355327160390/874411291844968468/pistol.png">
+</head>
+<body on="muzica()">
+    <div id="cursor">
+
+    </div>
+    <button id=Start  onclick="Start()" >
+      
+    </button>
+    <samp id=heal2>
+          <span id=nr>
+        Value: 0
+          </span>
+        </samp>
+          <span align=center id=heal2>
+          
+              
+          <span id=heal>
+            Heal: 0
+              </span>
+            </span>
+          <br>
+          <span id=nr1 onclick="muzica()" ></span>
+    <br>
+<button id=apasa  onclick="Plus1()" >
+    
+</button>w
+
+<div id=canvas onclick="shootSfx()">
+
+</div>
+
+
+</body>
+<script> 
+    var heal=100; var hitMe;
+
+    const cursor = document.querySelector("#cursor");
+    document.addEventListener("mousemove",(e)=>
+    {
+        cursor.style.cssText=`top: ${e.clientY}px; left: ${e.clientX}px;`
+    }
+    )
+    function shootSfx()
+    {
+        if(start==1){
+        var shootSfx = new Audio("https://cdn.discordapp.com/attachments/873654124904849450/873880345257316362/P226-9mm-Far-Single-Gunshot-B-www.fesliyanstudios.com.mp3");
+        shootSfx.play();
+        var bulletSfx = new Audio("https://cdn.discordapp.com/attachments/873654124904849450/873887435803746314/ES_Bullet_Shell_Drop_Cement_26_-_SFX_Producer.mp3");
+        setTimeout( bullet,500) 
+        function bullet(){
+            bulletSfx.play();
+        } 
+    }
+    }
+    var ok=1;
+    var ok= 0;
+    
+    var audio = new Audio("https://cdn.discordapp.com/attachments/873654124904849450/873654157968539658/y2mate.com_-_Overwatch_by_Evan_King_Royalty_Free_Epic_Music.mp3");
+
+     function muzica(){
+        
+        if(ok== 0){
+            ok= 1;
+            audio.play();
+            document.getElementById("nr1").style.backgroundImage= 'url("https://cdn.discordapp.com/attachments/873566355327160390/873686417778282496/music.png")';
+
+        }
+        else{
+            ok= 0;
+            audio.pause();
+            document.getElementById("nr1").style.backgroundImage = 'url("https://cdn.discordapp.com/attachments/873566355327160390/873708791101808650/musicOff.png")';
+
+            }
+        }
+    
+  
+    var reload=1;
+    var i=0;
+    function Start(){
+        if(reload==0)
+        {
+            location.reload();
+        }
+     
+ 
+
+        var time1 = window.setTimeout(Tpmove,2000);
+          document.getElementById("Start").style.display="none";
+       if(start==1){
+        shootSfx();
+         kill.play();
+         kill2.play();
+     }
+        else start=1;
+     
+     
+        
+      
+       var randomTop = getRandomNumber(20, 70);
+       var randomLeft = getRandomNumber(20,80);
+       
+       document.getElementById("apasa").style.left = randomLeft+"%";
+       document.getElementById("apasa").style.top = randomTop+"%";
+       document.getElementById("apasa").style.display="none";
+
+        document.getElementById("apasa").style.padding="5%";
+        var sfx1 = new Audio("https://cdn.discordapp.com/attachments/873654124904849450/873733993072320522/zapsplat_foley_cash_register_till_digital_button_press_single_001_65073.mp3");
+        sfx1.play();
+    }
+    var start=0;
+
+
+function Plus1(){
+ clearTimeout(time1);
+    i++; hitMe=1;
+    var kill = new Audio("https://cdn.discordapp.com/attachments/873654124904849450/873903036169347162/y2mate.com_-_Among_Us_Kill_Sound_Effect_HD.mp3");
+    var kill2 = new Audio("https://cdn.discordapp.com/attachments/873654124904849450/873946557848907776/horror_bone_arm_leg_break_male_scream_001.mp3");
+   
+   
+  
+    document.getElementById("nr").innerHTML="Value: "+i ;
+    document.getElementById("apasa").style.backgroundImage= 'url("https://cdn.discordapp.com/attachments/873566391612084225/873948882495754250/counter_strike_PNG102assadasd_1.png")';
+   setTimeout(asd,100);
+    function asd(){
+    document.getElementById("apasa").style.display="none";
+   }
+    
+
+    
+
+    if(start==1){
+   shootSfx();
+    kill.play();
+    kill2.play();
+}
+   else start=1;
+  
+
+  
+}
+var shoot2Sfx = new Audio("https://cdn.discordapp.com/attachments/873654124904849450/875034537208455239/john_ruok_gun_tikka_t3_battue_308_001_Swpph_Mono_Shot_Weak_1_mp3cut.net.mp3");
+var shoot2Sfx2 = new Audio("https://cdn.discordapp.com/attachments/873654124904849450/875025378375262238/john_ruok_gun_tikka_t3_battue_308_001_Swpph_Mono_Shot_Weak_1.mp3");
+
+if(start==1)
+var time1 = window.setTimeout(Tpmove,2000-i*100);
+
+function Tpmove()
+{ var randomTop = getRandomNumber(20, 70);
+    var randomLeft = getRandomNumber(20,80);
+    document.getElementById("apasa").style.backgroundImage= 'url("https://cdn.discordapp.com/attachments/873566391612084225/873566422960320522/counter_strike_PNG102.png")';
+
+    document.getElementById("apasa").style.left = randomLeft+"%";
+    document.getElementById("apasa").style.top = randomTop+"%";
+    document.getElementById("apasa").style.display="block";
+    document.getElementById("heal").innerHTML="Heal:" + heal;
+    if (hitMe==0){
+    setTimeout(dmg,400);
+    function dmg(){
+        document.getElementById("heal").innerHTML="Heal:" + heal;
+       heal=heal-10;
+       document.getElementById("apasa").style.backgroundImage= 'url("https://cdn.discordapp.com/attachments/873566391612084225/874089632118235186/aaaaaaaa.png")';
+       document.getElementById("canvas").style.backgroundImage= 'url("https://cdn.discordapp.com/attachments/873566355327160390/874228585504849930/aaaaaaaaaaaaaaaaaaaaaadsadasdasdas.png")';
+       setTimeout(fireLight,100);
+     
+       function fireLight(){
+        document.getElementById("apasa").style.backgroundImage= 'url("https://cdn.discordapp.com/attachments/873566391612084225/873566422960320522/counter_strike_PNG102.png")';
+         shoot2Sfx.play();
+      
+         setTimeout(Iwashit,200)
+         function Iwashit(){
+            if(heal>0)
+            document.getElementById("canvas").style.backgroundImage= 'url("https://cdn.discordapp.com/attachments/873566355327160390/873641803138625536/1900791.jpg")';
+
+         }
+
+       }
+       if(heal>0)
+       document.getElementById("heal").innerHTML="Heal:" + heal;
+       else
+       document.getElementById("heal").innerHTML="Heal: 0";
+
+
+       
+    }
+ }
+ 
+ hitMe=0;
+ if(heal<10){
+ document.getElementById("canvas").innerHTML="You died!"
+ document.getElementById("heal").innerHTML="Heal: 0";
+ document.getElementById("apasa").style.display="none";
+ document.getElementById("canvas").style.backgroundImage= 'url("https://cdn.discordapp.com/attachments/873566355327160390/874228585504849930/aaaaaaaaaaaaaaaaaaaaaadsadasdasdas.png")';
+ document.getElementById("Start").style.display="block";
+ document.getElementById("Start").style.backgroundImage= 'url("https://cdn.discordapp.com/attachments/873566355327160390/874358506646564944/321354654643543.png")';
+ document.getElementById("Start").style.marginLeft = "37%";
+ reload=0;
+
+}
+
+
+ if(heal>0){
+   if(i<15)
+    setTimeout(Tpmove,2000-i*100);
+    else
+    setTimeout(Tpmove,2000-i*50);
+ }
+}
+
+
+function hide() {
+    document.getElementById("apasa").style.display="none";
+    setTimeout(unhide, 2000)
+}
+ 
+function unhide()
+{
+    document.getElementById("apasa").style.display="block";
+}
+function getRandomNumber(min, max) {
+    
+    return Math.random() * (max - min) + min;
+      
+  }
+</script>
+
+</html>
